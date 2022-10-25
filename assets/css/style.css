@@ -624,6 +624,7 @@ body{
     transform: translate(200%, 0);
     -webkit-animation: box4 0.5s linear infinite;
     animation: box4 0.5s linear infinite;
+    
 }
 
 
