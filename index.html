@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- bootstrap -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- custom style -->
@@ -41,10 +42,10 @@
 
     </header>
 
-    <section class="mainSection position-relative">
+    <section class="  mainSection position-relative">
         <div class="container ">
             <div class="row align-items-center   ">
-                <div class="col-lg-7 col-sm-12">
+                <div class="col-lg-7 col-sm-12" data-aos="fade-right" data-aos-duration="550">
                     <div class="item--main  ">
                         <h1 class="main--title">Experienced <span class="mainColor">mobile and web</span> applications
                             and website builders measuring.</h1>
@@ -56,7 +57,7 @@
                     </div>
 
                 </div>
-                <div class="col-lg-5  d-none d-lg-block  ">
+                <div class="col-lg-5  d-none d-lg-block  " data-aos="fade-left"  data-aos-duration="550">
                     <div class="item2--main">
                         <img class="w-100" src="assets/imges/HeaderMan.svg" alt="" srcset="">
                     </div>
@@ -67,13 +68,13 @@
     </section>
 
     <!-- icons section  -->
-    <section class="iconSection pt-2 pb-4 position-relative">
+    <section class="iconSection  pt-2 pb-4 position-relative">
 
         <div class="container  ">
             <div class="d-flex flex-wrap justify-content-md-center">
                 <div class="mt-4 me-4">
-                    <div class=" d-flex  align-items-center ">
-                        <div class="icon p-3 bg-black rounded-3 me-3">
+                    <div class=" d-flex  align-items-center "data-aos="fade-right" data-aos-duration="500">
+                        <div class="icon  icon1 rounded-3 me-3" >
                             <img src="assets/imges/seoIcon.svg" alt="" srcset="">
                         </div>
                         <div class="content">
@@ -83,8 +84,8 @@
                     </div>
                 </div>
                 <div class="mt-4 me-4">
-                    <div class=" d-flex  align-items-center ">
-                        <div class="icon p-3 bg-black rounded-3 me-3">
+                    <div class=" d-flex  align-items-center " data-aos="fade-down" data-aos-duration="500">
+                        <div class="icon icon2  rounded-3 me-3">
                             <img src="assets/imges/vrIcon.svg" alt="" srcset="">
                         </div>
                         <div class="content">
@@ -94,8 +95,8 @@
                     </div>
                 </div>
                 <div class="mt-4 me-4">
-                    <div class=" d-flex  align-items-center ">
-                        <div class="icon p-3 bg-black rounded-3 me-3">
+                    <div class=" d-flex  align-items-center "data-aos="fade-down" data-aos-duration="500">
+                        <div class="icon icon3  rounded-3 me-3">
                             <img src="assets/imges/webIcon.svg" alt="" srcset="">
                         </div>
                         <div class="content">
@@ -105,8 +106,8 @@
                     </div>
                 </div>
                 <div class="mt-4 me-4">
-                    <div class=" d-flex  align-items-center ">
-                        <div class="icon p-3  bg-black rounded-3 me-3">
+                    <div class=" d-flex  align-items-center " data-aos="fade-left" data-aos-duration="500">
+                        <div class="icon icon4   rounded-3 me-3">
                             <img src="assets/imges/moblieIcon.svg" alt="" srcset="">
                         </div>
                         <div class="content">
@@ -120,23 +121,23 @@
     </section>
 
 
-    <section class="mockup--section mt-5 overflow-hidden">
-        <div class="py-1 text-center container mb-4">
-            <h3 class="neroColor fw-bold">Lorem Ipsum is simply dummy text of the printing. </h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br> Lorem Ipsum has been the
+    <section class=" mockup--section mt-5 overflow-hidden">
+        <div class="py-1 text-center container mb-4" data-aos="zoom-in" data-aos-duration="500">
+            <h3 class="neroColor fw-bold mockup--h3">Lorem Ipsum is simply dummy text of the printing. </h3>
+            <p class="mockup--p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br> Lorem Ipsum has been the
                 industry's</p>
         </div>
 
         <div class="containerr  ">
             <div class="row  align-items-center">
-                <div class="col-lg-5  ">
+                <div class="col-lg-6  " data-aos="fade-right" data-aos-duration="400">
                     <div class=" d-flex align-items-center  mb-4">
-                        <div class="smile--icon  rounded-circle p-3 text-center me-3">
+                        <div class="smile--icon  rounded-circle  text-center me-3">
                             <img src="assets/imges/happySmile.svg" alt="">
                         </div>
                         <div class="">
-                            <h5 class="m-0 fw-bold fs-6">Lorem Ipsum is simply dummy text</h5>
-                            <p class="small">Lorem Ipsum is simply dummy text </p>
+                            <h5 class="m-0 fw-bold fs-6 smile--title">Lorem Ipsum is simply dummy text</h5>
+                            <p class="small smile--p">Lorem Ipsum is simply dummy text </p>
                         </div>
                     </div>
                     <h3 class="mockup--title neroColor"><span class="mainColor">Lorem Ipsum </span> is simply dummy text
@@ -145,60 +146,62 @@
                         applications and website builders measuring dozens of completed projects. We build and develop
                         mobile applications for several top platforms, including Android & IOS. </p>
                 </div>
-                <div class="col-lg-7 col-md-10  position-relative text-end ">
+                <div class="col-lg-6 col-md-10  position-relative text-end "data-aos="fade-left" data-aos-duration="500">
                     <div class="moucpAft d-none d-lg-block"></div>
                     <img class="w-100 " src="assets/imges/MoucpMobile.svg" alt="" srcset="">
                 </div>
             </div>
-            <br>
-            <br>
-            <br>
+
             <div class="containerr">
                 <div class="row  my-5 py-5 align-items-center justify-content-between ">
-                    <div class="col-lg-7   ">
+                    <div class="col-lg-6 moucup--order   " data-aos="zoom-out-right" data-aos-duration="500">
                         <!-- <div class="moucpAft d-none d-lg-block"></div> -->
-                        <img class=" " src="assets/imges/website-mockup.svg" alt="" srcset="">
+                        <img class="w-100  " src="assets/imges/website-mockup.svg" alt="" srcset="">
                     </div>
-                    <div class=" col-lg-5 col-md-10 ">
+                    <div class=" col-lg-6 col-md-10  " data-aos="zoom-out-left" data-aos-duration="500">
                         <div class=" d-flex align-items-center  mb-4">
-                            <div class="smile--icon  rounded-circle p-3 text-center me-3">
+                            <div class="smile--icon  rounded-circle  text-center me-3">
                                 <img src="assets/imges/happySmile.svg" alt="">
                             </div>
                             <div class="">
-                                <h5 class="m-0 fw-bold fs-6">Lorem Ipsum is simply dummy text</h5>
-                                <p class="small">Lorem Ipsum is simply dummy text </p>
+                                <h5 class="m-0 fw-bold fs-6 smile--title ">Lorem Ipsum is simply dummy text</h5>
+                                <p class="small smile--p">Lorem Ipsum is simply dummy text </p>
                             </div>
                         </div>
-                        <h3 class="mockup--title neroColor"><span class="mainColor">Lorem Ipsum </span> is simply dummy text
+                        <h3 class="mockup--title neroColor"><span class="mainColor">Lorem Ipsum </span> is simply dummy
+                            text
                             of the printing. </h3>
                         <p class=" py-1 lh-lg">KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web
-                            applications and website builders measuring dozens of completed projects. We build and develop
+                            applications and website builders measuring dozens of completed projects. We build and
+                            develop
                             mobile applications for several top platforms, including Android & IOS. </p>
                     </div>
-    
+
                 </div>
-               
-                <div class="row my-5 p align-items-center">
-    
-    
-                 
-                    <div class="col-lg-6  ">
+
+                <div class="row my-5 pt-5  align-items-center">
+
+
+
+                    <div class="col-lg-6  " data-aos="fade-right" data-aos-duration="500">
                         <div class=" d-flex align-items-center  mb-4">
-                            <div class="smile--icon  rounded-circle p-3 text-center me-3">
+                            <div class="smile--icon  rounded-circle  text-center me-3">
                                 <img src="assets/imges/happySmile.svg" alt="">
                             </div>
                             <div class="">
-                                <h5 class="m-0 fw-bold fs-6">Lorem Ipsum is simply dummy text</h5>
-                                <p class="small">Lorem Ipsum is simply dummy text </p>
+                                <h5 class="m-0 fw-bold fs-6 smile--title">Lorem Ipsum is simply dummy text</h5>
+                                <p class="small  smile--p">Lorem Ipsum is simply dummy text </p>
                             </div>
                         </div>
-                        <h3 class="mockup--title neroColor"><span class="mainColor">Lorem Ipsum </span> is simply dummy text
+                        <h3 class="mockup--title neroColor"><span class="mainColor">Lorem Ipsum </span> is simply dummy
+                            text
                             of the printing. </h3>
                         <p class=" py-1 lh-lg">KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web
-                            applications and website builders measuring dozens of completed projects. We build and develop
+                            applications and website builders measuring dozens of completed projects. We build and
+                            develop
                             mobile applications for several top platforms, including Android & IOS. </p>
-                    </div> 
-                    <div class="col-lg-6 col-md-10 position-relative text-center ">
+                    </div>
+                    <div class="col-lg-6 col-md-10 position-relative text-center " data-aos="fade-left" data-aos-duration="500">
                         <div class="moucpvr d-none d-lg-block   "></div>
                         <img class="w-100  " src="assets/imges/manVr.svg " alt="" srcset="">
                     </div>
@@ -208,9 +211,118 @@
 
 
     </section>
+
+
+    <section class="mt-5 ">
+        <div class="container py-3">
+            <div class="row justify-content-between "  data-aos="zoom-in-right"  data-aos-duration="500">
+                <div class="col-lg-6  mt-3">
+                    <div class="alertSection text-center ">
+                        <h4 class="neroColor titlAlert">Lorem Ipsum is simply <br> dummy text.</h4>
+                        <p>KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web applications and website
+                            builders measuring dozens of completed projects. We build and develop mobile applications
+                            for several top platforms, including Android & IOS. </p>
+                        <a href="" class="buttom mt-3 mainBg px-3 py-2 text-white ">View More</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-3 text-white position-relative "data-aos="zoom-in-left"   data-aos-duration="500">
+                    <div class="alertSection2 mainBg text-center  ">
+                        <div class="angle w-25 position-absolute">
+                            <img class="w-100" src="assets/imges/BellAngle.svg" alt="">
+                        </div>
+                        <h4 class=" titlAlert">Lorem Ipsum is simply <br> dummy text.</h4>
+                        <p class="text-white">KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web
+                            applications and website builders measuring dozens of completed projects. We build and
+                            develop mobile applications for several top platforms, including Android & IOS. </p>
+                        <a href="" class="buttom mt-3 bg-white mainColor px-3 py-2 ">View More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="">
+        <div class="container  mt-4 py-2 ">
+            <h5 class=" text-center ">You will be in good Company</h5>
+            <div class="Company d-flex flex-wrap  justify-content-md-center ">
+                <div class="mx-2"  data-aos="flip-left" data-aos-duration="700">
+                    <img class="w-100" src="assets/imges/beneoshop.svg" alt="" srcset="">
+
+                </div>
+                <div class="mx-2"  data-aos="flip-left" data-aos-duration="750">
+                    <img class="w-100" src="assets/imges/caspio.svg" alt="" srcset="">
+                </div>
+                <div class="mx-2"  data-aos="flip-left" data-aos-duration="750">
+                    <img class="w-100" src="assets/imges/HyperGrid.svg" alt="" srcset="">
+                </div>
+                <div class="mx-2"  data-aos="flip-left" data-aos-duration="750">
+                    <img class="w-100" src="assets/imges/leotrippi.svg" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer py-5">
+            <div class="container mt-4 text-center py-5 d-flex flex-column align-items-center">
+                <h4 class="footer--tilte"data-aos="zoom-in" data-aos-duration="600">Lorem Ipsum is simply dummy <br> text of the printing. </h4>
+                <div class=" subscribe--foot d-flex py-3 justify-content-center align-items-center w-50 ">
+                    <input type="text" class="footer--input me-2 py-2 px-2  w-100  rounded-3  "
+                        placeholder="Enter your email" data-aos="zoom-in" data-aos-duration="700">
+                    <a href=" " class="buttom bg-black text-white py-2 px-2  "data-aos="zoom-in" data-aos-duration="750">subscribe</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer--logo">
+            <div class="container py-5">
+             <div class="row  justify-content-between">
+                <div class="col-md-4">
+                    <div class="">
+                        <a href="" class="fw-bold mainColor ">LOGO</a>
+                        <p class="footer--p">Lorem Ipsum is simply dummy text of the printing and typesetting industry.  </p>
+                        <span>@Lorem</span>
+                    </div>
+
+                </div>
+                <div class="col-md-2">
+                    <h5 class="About--foot">About us</h5>
+                    <ul>
+                        <li>Portfolio </li>
+                        <li>Careers </li>
+                        <li>Contact</li>
+                    </ul>
+
+                </div>
+                <div class="col-md-5"   >
+                    <h5 class="">Contact us</h5> 
+                    <p class="Contact--p">Lorem Ipsum is simply dummy text <br> of the printing and typesetting industry. </p>
+                 <div class="social  d-flex justify-content-between align-items-center mt-1">
+                     <p>+908 89097 890</p>
+                     <div class="iconsohial">
+                        <a href=""><img src="assets/imges/insta.svg" alt="intgram" srcset=""></a>
+                        <a href=""><img src="assets/imges/twitte.svg" alt="twitteer" srcset=""></a>
+                        <a href=""><img src="assets/imges/facebook.svg" alt="facebooke" srcset=""></a>
+                        <a href=""><img src="assets/imges/linked.svg" alt="linkedin" srcset=""></a>
+                    </div>
+                 </div>
+                </div>
+                
+             </div>
+            </div>
+        </div>
+        <div class="Copyright text-center py-3 " >
+            <p class=" small">Copyright ® 2021 Lorem All rights Rcerved</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- bootstrap -->
     <script src="assets/scripts/bootstrap.bundle.min.js"></script>
     <!-- custom js -->
+
     <script src="assets/scripts/script.js"></script>
 </body>
 
