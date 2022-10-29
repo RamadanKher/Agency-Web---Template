@@ -37,8 +37,49 @@
     color: #868686;
     margin: 0;
   }
+
+    /* globle buttom style  */ 
+    .buttom {
   
+      display: inline-block;
+     
+      padding: 5px 14px;
+     background-color:#03a9f4;
+     font-size: 15px;
+     font-weight: 600;
+     line-height: 2em;
+     border-radius: 3px;
+     box-shadow: 0 6px 16px rgb(3 169 244 / 35%);
+     transition: 0.6s ease;
+    }
+      /* globle buttom style  end */
+       /*scroll btn up  */
+      #scrollTopBtn {
+        padding: 10px;
+        background-color: #08D3BB;
+        color: white;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        border-radius: 50%;
+        position: fixed;
+        right: 3%;
+        bottom: 5%;
+        cursor: pointer;
+        opacity: 0.5;  
+        z-index: 99999999999;
+      }
+      
+      #scrollTopBtn:hover {
+        transition: 0.2s;
+        opacity: 1;
+      }
+       /*scroll btn up  */
+      
   
+  /* -------- header >> nav start  -----*/
+
   
   /* nav */
   nav {
@@ -47,12 +88,6 @@
     display: flex;
     justify-content: space-between;
     padding: 1rem 0;
-  }
-  
-  .logo {
-    /* width: 10%; */
-    /* background-color: tomato; */
-  
   }
   
   .Links--list {
@@ -187,11 +222,12 @@
       margin-bottom: 1px;
     }
   }
+    /* -------- header >> nav end  -----*/
+
   
-  /* main buttom style  */
   
   
-  /* main */
+  /* main //////////////*/
   .mainSection {
     height: calc(100vh - 62px);
     background-image: url(../imges/Header.svg);
@@ -211,17 +247,7 @@
     font-size: 40px;
   }
   
-  
-  .buttom {
-    padding: 6px 15px;
-    /* border-color: var(--mainColor); */
-    border-radius: 10px;
-    border: 1px solid;
-  
-    display: inline-block;
-    transition: 0.6s ease;
-  
-  }
+ 
   
   .btn1:hover {
     transform: translateY(4px);
@@ -547,7 +573,7 @@
 
 
 
-
+/* ---------loding screen----------  */
 .lodingsscren{
   height: 100vh;
   display: flex;
@@ -561,21 +587,6 @@
     bottom: 0;
     position: absolute;
 }
-body{
-  /* overflow: hidden ; */
-}
-
-
-  /* loding */
-  /* body {
-    min-height: 100vh;
-    font-family: Roboto, Arial;
-    color: #ADAFB6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(249, 251, 255,0.6);  
-    } */
 
 .boxes {
     height: 32px;
@@ -598,7 +609,6 @@ body{
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
 }
-
 
 
 .boxes .box:nth-child(1) {
@@ -626,8 +636,6 @@ body{
     animation: box4 0.5s linear infinite;
     
 }
-
-
 
 .boxes .box > div {
     background: #5C8DF6;

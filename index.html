@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+   <!-- aos -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- bootstrap -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -20,18 +21,18 @@
 </head>
 
 <body>
-   
-    <header>
+   <!-- header >> nav  -->
+    <header >
         <nav class=" align-items-center  ">
             <div class="logo">
                 <a class="navbar--logo fw-bolder fs-5 mainColor" href="#">Navbar</a>
             </div>
             <div id="LinksList" class="Links--list ">
-                <a class="" href="#">Home</a>
-                <a class="" href="#">About us</a>
-                <a class="" href="#">Services</a>
-                <a class="" href="#">Blog</a>
-                <a class="buttom mainBg text-white" href="#">Contact us</a>
+                <a class="" href="index.html">Home</a>
+                <a class="" href="about.html">About us</a>
+                <a class="" href="services.html">Services</a>
+                <a class="" href="Blog.html">Blog</a>
+                <a class="buttom mainBg text-white shadow-none" href="#">Contact us</a>
             </div>
 
             <div id="toggleMenu" class="toggle-menu">
@@ -53,7 +54,7 @@
                         <p class="  mb-3">KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web
                             applications and website builders measuring dozens of completed projects. We build and
                             develop mobile applications for several top platforms, including Android & IOS. </p>
-                        <a href="" class="buttom btn1 mainBg text-white">Contact us</a>
+                        <a href="" class="buttom btn1 mainBg text-white me-2">Contact us</a>
                         <a href="" class="buttom btn1 bg-white">View more</a>
                     </div>
 
@@ -266,7 +267,7 @@
         </div>
     </section>
 
-
+<!-- footer -->
     <footer>
         <div class="footer py-5">
             <div class="container mt-4 text-center py-5 d-flex flex-column align-items-center">
@@ -319,6 +320,8 @@
             <p class=" small">Copyright ® 2021 Lorem All rights Rcerved</p>
         </div>
     </footer>
+<!-- // footer end-->
+    <!-- -------------loding screen -------------- -->
     <div id="loading" class="lodingsscren ">
         <div class="boxes">
             <div class="box ">
@@ -347,8 +350,14 @@
             </div>
         </div>
        </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<!-- scroll btn  -->
+       <div id="scrollTopBtn">
+       <img src="assets/imges/arrowUp.svg" alt="arrowUp">
+    </div>
 
+       <!-- jquery -->
+    <script src="assets/scripts/jquery.js"></script>
+<!-- Aos -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- bootstrap -->
     <script src="assets/scripts/bootstrap.bundle.min.js"></script>
