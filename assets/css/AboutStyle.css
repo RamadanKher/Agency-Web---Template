@@ -612,5 +612,21 @@ justify-content: center !important;
 }
 
 
+/* media  */
+/*  Large devices  (desktops, 992px  ) */
+@media (max-width: 992px) { 
+  
+}
+  /*  Medium devices (tablets, 768px ) */
+ @media (max-width: 768px) { 
+  
+ 
+ }
+  /* small devices moblie (moblie, 768px ) */
+ 
+ @media (max-width: 576px) { 
+ 
+  }
+
 
 
