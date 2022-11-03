@@ -302,30 +302,63 @@ letter-spacing: 0em;
   font-size: 40px;
 }
 .item2--main{
-  animation: header 4s infinite ease alternate ;
+  -webkit-animation: header 4s infinite ease alternate ;
+          animation: header 4s infinite ease alternate ;
 }
-@keyframes header {
+@-webkit-keyframes header {
   0% {
-    transform: translate(0);
+    -webkit-transform: translate(0);
+            transform: translate(0);
   }
   
   20% {
-    transform: translate(6px,-6px);
+    -webkit-transform: translate(6px,-6px);
+            transform: translate(6px,-6px);
   }
   40% {
-    transform: translate(6px,6px);
+    -webkit-transform: translate(6px,6px);
+            transform: translate(6px,6px);
   }
   60% {
-    transform: translate(-6px,6px);
+    -webkit-transform: translate(-6px,6px);
+            transform: translate(-6px,6px);
   }
   80% {
-    transform: translate(-6px,-6px);
+    -webkit-transform: translate(-6px,-6px);
+            transform: translate(-6px,-6px);
   }
   100% {
-    transform: translate(0);
+    -webkit-transform: translate(0);
+            transform: translate(0);
   }
 }
-
+@keyframes header {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  
+  20% {
+    -webkit-transform: translate(6px,-6px);
+            transform: translate(6px,-6px);
+  }
+  40% {
+    -webkit-transform: translate(6px,6px);
+            transform: translate(6px,6px);
+  }
+  60% {
+    -webkit-transform: translate(-6px,6px);
+            transform: translate(-6px,6px);
+  }
+  80% {
+    -webkit-transform: translate(-6px,-6px);
+            transform: translate(-6px,-6px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
 
 .btn1:hover {
   -webkit-transform: translateY(4px);
