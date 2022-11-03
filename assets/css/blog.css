@@ -696,12 +696,18 @@ header {
         font-size: 18px;
         line-height: 25px
     }
-   
+    .footer {
+        /* background-image: none;
+        background-color: #e8f4fa 
+        ; */
+    }
+    .input-grey-rounded{width: 30%;}
 }
 
 @media (max-width:300px) {
  .input-grey-rounded{
 background: none;
 padding: 10px ;
+
 }
 }
