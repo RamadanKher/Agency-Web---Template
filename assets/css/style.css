@@ -477,9 +477,7 @@ line-height: 51px;
 letter-spacing: 0em;
 
 }
-.smile1{
-  background-color: #08D3BB;
-}
+
 
 .containerr{
   width: 90%;
@@ -487,6 +485,7 @@ letter-spacing: 0em;
 }
 .smile--icon{
   padding: 0.9rem;
+  background-color: #08D3BB;
 }
 
 
