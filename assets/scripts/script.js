@@ -1,14 +1,27 @@
+$(window).ready(() => {
+    $("#loading").fadeOut(1000)
+    $("body").css("overflow", "auto")
+})
 var a = 0;
+// nav bar scroll
+// let navBarShow = $("#main").offset().top;
 $(window).scroll(function () {
+    let windowScroll = $(window).scrollTop()
+    
+    
+    // if (windowScroll > navBarShow) {
+    //     $("#navBar").attr("id", "navBarScroll")
+    // } else {
+    //     $("#navBarScroll").attr("id", "navBar")
+    // }
 
-  let windowScroll = $(window).scrollTop()
-  // scroll to top button
-  if (windowScroll > $("header").offset().top + 500) {
-      $('#scrollTopBtn').fadeIn(500);
-      $('#scrollTopBtn').css("display", "flex")
-  } else {
-      $('#scrollTopBtn').fadeOut(500);
-  }
+    // scroll to top button
+    if (windowScroll > $("#main").offset().top +200) {
+        $('#scrollTopBtn').fadeIn(500);
+        $('#scrollTopBtn').css("display", "flex")
+    } else {
+        $('#scrollTopBtn').fadeOut(500);
+    }
   // counter numbers service.html 
     var oTop = $("#counter-box").offset().top - window.innerHeight;
     if (a == 0 && $(window).scrollTop() > oTop) {
@@ -45,12 +58,8 @@ $(window).scroll(function () {
 });
 
 
-// loding screen 
-$(window).ready(() => {
-    $("#loading").fadeOut(1400)
-    $("body").css("overflow", "auto")
-})
-// loding screen  end 
+
+
 
 //fire scorll to top btn
 $("#scrollTopBtn").click(() => {
@@ -106,3 +115,8 @@ $(function() {
   });
 
   AOS.init();
+
+
+
+
+  
