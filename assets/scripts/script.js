@@ -1,9 +1,50 @@
 
+// service.html counter
+var a = 0;
+$(window).scroll(function () {
+    var oTop = $("#counter-box").offset().top - window.innerHeight;
+    if (a == 0 && $(window).scrollTop() > oTop) {
+        $(".counter").each(function () {
+            var $this = $(this),
+                countTo = $this.attr("data-number");
+            $({
+                countNum: $this.text()
+            }).animate(
+                {
+                    countNum: countTo
+                },
 
+                {
+                    duration: 850,
+                    easing: "swing",
+                    step: function () {
+                        //$this.text(Math.ceil(this.countNum));
+                        $this.text(
+                            Math.ceil(this.countNum).toLocaleString("en")
+                        );
+                    },
+                    complete: function () {
+                        $this.text(
+                            Math.ceil(this.countNum).toLocaleString("en")
+                        );
+                        //alert('finished');
+                    }
+                }
+            );
+        });
+        a = 1;
+    }
+});
+// service.html counter end 
+
+// loding screen 
 $(window).ready(() => {
     $("#loading").fadeOut(1400)
     $("body").css("overflow", "auto")
 })
+// loding screen  end 
+
+
 // let navBarShow = $("#navBar").offset().top;
 $(window).scroll(() => {
 
@@ -29,13 +70,12 @@ $("#scrollTopBtn").click(() => {
 
 
 
+
+
+
 //  close btn for nav
 let toggleMenu = document.getElementById("toggleMenu");
 let LinksList = document.getElementById("LinksList");
-
-
-
-
 
 
 // this for togle btoom  sidbar links in responsive
@@ -48,9 +88,6 @@ toggleMenu.addEventListener("click",() => {
 
 
 // about page owl carousel
-
-
-
 $(function() {
     // Owl Carousel
     var owl = $(".owl-carousel");
@@ -80,27 +117,4 @@ $(function() {
   });
 
   AOS.init();
-// //   about page conter 
-// window.onscroll=function () {
-    
 
-//   if (window.scrollY >= conterSection.offsetTop-100) {
-//     counters.forEach( counter => {
-//         const animate = () => {
-//            const value = +counter.getAttribute('akhi');
-//            const data = +counter.innerText;
-          
-//            const time = value / speed;
-//           if(data < value) {
-//                counter.innerText = Math.ceil(data + time);
-//                setTimeout(animate, 1);
-//              }else{
-//                counter.innerText = value;
-//              }
-          
-//         }
-        
-//         animate();
-//      });}
-  
-// }
