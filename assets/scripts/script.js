@@ -1,7 +1,15 @@
-
-// service.html counter
 var a = 0;
 $(window).scroll(function () {
+
+  let windowScroll = $(window).scrollTop()
+  // scroll to top button
+  if (windowScroll > $("header").offset().top + 500) {
+      $('#scrollTopBtn').fadeIn(500);
+      $('#scrollTopBtn').css("display", "flex")
+  } else {
+      $('#scrollTopBtn').fadeOut(500);
+  }
+  // counter numbers service.html 
     var oTop = $("#counter-box").offset().top - window.innerHeight;
     if (a == 0 && $(window).scrollTop() > oTop) {
         $(".counter").each(function () {
@@ -35,7 +43,7 @@ $(window).scroll(function () {
         a = 1;
     }
 });
-// service.html counter end 
+
 
 // loding screen 
 $(window).ready(() => {
@@ -44,26 +52,7 @@ $(window).ready(() => {
 })
 // loding screen  end 
 
-
-// let navBarShow = $("#navBar").offset().top;
-$(window).scroll(() => {
-
-    let windowScroll = $(window).scrollTop()
-    // if (windowScroll > navBarShow) {
-    //     $("#navBar").attr("id", "navBarScroll")
-    // } else {
-    //     $("#navBarScroll").attr("id", "navBar")
-    // }
-
-    // scroll to top button
-    if (windowScroll > $("header").offset().top + 500) {
-        $('#scrollTopBtn').fadeIn(500);
-        $('#scrollTopBtn').css("display", "flex")
-    } else {
-        $('#scrollTopBtn').fadeOut(500);
-    }
-})
-//scorll to top btn
+//fire scorll to top btn
 $("#scrollTopBtn").click(() => {
     $("html,body").animate({ scrollTop: 0 }, 2)
 })
@@ -117,4 +106,3 @@ $(function() {
   });
 
   AOS.init();
-
